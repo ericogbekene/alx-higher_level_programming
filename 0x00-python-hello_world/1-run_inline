@@ -1,4 +1,3 @@
 #!/bin/bash
-python3
-$PYCODE
-
+execute_code=$(printenv PYCODE)
+python3 "$execute_code"
