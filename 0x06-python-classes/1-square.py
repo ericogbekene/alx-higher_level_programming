@@ -5,7 +5,7 @@
 class Square:
     """ class Square """
 
-    def __init__(self, size:int) -> None:
+    def __init__(self, size: int) -> None:
         """
         instant of square with size attribute
         Args:
