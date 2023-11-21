@@ -2,6 +2,6 @@
 """ an empty Class thT defines a square """
 
 
-class Square(self):
+class Square:
     """ my class """
     pass
