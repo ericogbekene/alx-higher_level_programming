@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" defining a class square """
+
 
 class Square:
     def __init__(self, size=0):
@@ -7,9 +9,14 @@ class Square:
 
         Args:
             size - of Square
+
+        raises:
+            ValueError - if size < 0
+            TypeError - if not integer
         """
         self.__size = size
 
+    @property
     def size(self):
         """
         function for size
