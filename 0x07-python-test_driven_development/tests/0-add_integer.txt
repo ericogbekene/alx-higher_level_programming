@@ -1,0 +1,36 @@
+####################################
+
+# add_integer.txt
+
+"""
+    importing module
+
+    from 0-add_integer import add_integer
+
+    Usage:
+    Test1:
+        >>> print(add_integer(1, 2))
+        3
+    Test2:
+        >>> print(add_integer(100, -2))
+        88
+    Test3:
+        >>> print(add_integer(2))
+        100
+    Test4:
+        >>> print(add_integer(100.3, -2))
+        88
+    Test5:
+        >>> print(add_integer(4, "School"))
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer
+    Test6:
+        #test if user does not pass any argument for 'a'
+        >>> print()
+        Traceback (most recent call last):
+        ...
+        TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+"""

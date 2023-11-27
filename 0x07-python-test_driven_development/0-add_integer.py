@@ -9,7 +9,6 @@ def add_integer(a, b=98):
         11
         >>> add_integer(7, -1)
         6
-        >>> print() 
     """
 
     if not isinstance(a, (int, float)):
@@ -22,8 +21,3 @@ def add_integer(a, b=98):
     b = int(b)
 
     return (a + b)
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
-    print(add_integer(None))
