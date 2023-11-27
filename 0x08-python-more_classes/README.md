@@ -1,0 +1,1 @@
+Everything in python is an Object. OOP is a very important programming paradigm that helps us organise codes into classes and objects (as instances). Helping us handle data more efficiently and write more modular and reusable code.
