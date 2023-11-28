@@ -4,11 +4,13 @@
 
 def add_integer(a, b=98):
     """ my addition function
-    Usage:
-        >>> add_integer(4, 7)
-        11
-        >>> add_integer(7, -1)
-        6
+    Args:
+        a - integer or float input
+        b - integer or float input
+
+    raises:
+        TypeError: if a or b not integer or float
+        TypeError: if no argument is passed to a
     """
 
     if not isinstance(a, (int, float)):
