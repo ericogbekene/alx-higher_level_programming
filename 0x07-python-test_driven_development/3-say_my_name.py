@@ -20,14 +20,9 @@ def say_my_name(first_name, last_name=""):
         TypeError: say_my_name() missing 1 required positional argument: 'first_name'
     """
 
-    if type(first_name) is not str:
+    if not isinstance(first_name, str) or first_name == None:
         raise TypeError("first_name must be a string")
     elif not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
     else:
         print("My name is {} {}".format(first_name, last_name))
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
-    #say_my_name()
