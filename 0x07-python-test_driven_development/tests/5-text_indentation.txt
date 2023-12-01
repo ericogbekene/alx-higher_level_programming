@@ -1,0 +1,18 @@
+====================================================================
+
+""" importing module """
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+"""
+    This function indents the text.
+
+    Doctests:
+    >>> text_indentation("hello")
+    hello
+    >>> text_indentation(" hello")
+    hello
+    >>> text_indentation("  hello")
+    hello
+
+"""
