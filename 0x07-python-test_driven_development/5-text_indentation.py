@@ -7,7 +7,6 @@ def text_indentation(text):
         raise TypeError("text must be a string")
 
     for i in text:
-        #print(i)
         if i == ".":
             print()
             print()
