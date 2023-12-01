@@ -16,7 +16,7 @@ def add_integer(a, b=98):
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     a = int(a)
-    if a == None:
+    if a is None:
         raise TypeError("add_integer() missing 1 required positional argument: 'a'")
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")

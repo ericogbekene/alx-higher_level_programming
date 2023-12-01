@@ -28,3 +28,17 @@ TypeError: div must be a number
 Traceback (most recent call last):
   ...
 ZeroDivisionError: division by zero
+
+>>> matrix_new = [[1, 2, 3], [4, 'Best', 6]]
+
+>>> print(matrix_divided(matrix_new, 5))
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_three = [[1, 2], [4, '5', 6]]
+
+>>> print(matrix_divided(matrix_three, 5))
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
