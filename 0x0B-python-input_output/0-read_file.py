@@ -7,5 +7,5 @@ def read_file(filename=""):
 
     with open(filename, 'r') as file:
         output = file.read()
-        print(output)
+        print(output, end="")
         file.close()

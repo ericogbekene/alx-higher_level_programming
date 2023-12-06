@@ -2,6 +2,7 @@
 """ save an object to Json file """
 import json
 
+
 def save_to_json_file(my_obj, filename):
     """ this function saves an object to json file """
 
