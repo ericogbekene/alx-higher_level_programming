@@ -116,7 +116,7 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update the function with varying number of arguments
 
         """
@@ -137,7 +137,8 @@ class Rectangle(Base):
             """
         if kwargs:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                if hasattr(self, key):
+                    setattr(self, key, value)
 
     def to_dictionary(self):
         """ method to return a dict representation of Rectangle"""
