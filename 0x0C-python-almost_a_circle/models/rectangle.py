@@ -113,7 +113,8 @@ class Rectangle(Base):
     def __str__(self):
         """ print a string representation """
 
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}"\
+            .format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args):
         """ update the function with varying number of arguments
@@ -127,14 +128,19 @@ class Rectangle(Base):
         """
         if args:
             self.id = args[0] if len(args) > 0 else self.id
-            self.__width = args[1] if len(args) > 1 else self.__width
-            self.__height = args[2] if len(args) > 2 else self.__height
-            self.__x = args[3] if len(args) > 3 else self.__x
-            self.__y = args[4] if len(args) > 4 else self.__y
-        elif not args:
+            self.width = args[1] if len(args) > 1 else self.width
+            self.height = args[2] if len(args) > 2 else self.height
+            self.x = args[3] if len(args) > 3 else self.x
+            self.y = args[4] if len(args) > 4 else self.y
             """
             logic to use kwargs
             """
-            if kwargs:
-                for key, value in kwargs.items():
-                    setattr(self, key, value)
+        if kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ method to return a dict representation of Rectangle"""
+        """return self.__dict__ """
+        return {'id': self.id, 'width': self.width,
+                'height': self.height, 'x': self.x, 'y': self.y}
