@@ -28,8 +28,12 @@ class Square(Rectangle):
     @size.setter
     def size(self, size):
         """ setter method for square"""
-        self.width = size
-        self.height = size
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be > 0")
+        self.size = size
+        """self.height = size"""
 
     def update(self, *args, **kwargs):
         """ method to update attributes"""
