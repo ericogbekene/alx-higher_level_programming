@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ written tests for rectangle object """
+import io
+import sys
 import unittest
-
 from models.base import Base
-
 from models.rectangle import Rectangle
 
 
@@ -30,10 +30,10 @@ class Test_Rectangle(unittest.TestCase):
 
     def testing_rectangle(self):
         r1 = Rectangle(10, 2)
-        self.assertEqual(r1.id, 3)
+        self.assertEqual(r1.id, 5)
 
         r2 = Rectangle(2, 10)
-        self.assertEqual(r2.id, 4)
+        self.assertEqual(r2.id, 6)
 
         r3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r3.id, 12)

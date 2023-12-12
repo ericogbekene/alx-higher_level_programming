@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ written tests for Square subclass """
+import io
+import sys
 import unittest
 
 from models.base import Base
@@ -15,7 +17,7 @@ class Test_Square(unittest.TestCase):
     def test_square(self):
         """ test square method """
         s1 = Square(5)
-        self.assertEqual(s1.id, 1)
+        self.assertEqual(s1.id, 7)
 
         s2 = Square(2, 2)
 

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Unittest for base class """
+import io
+import sys
 import unittest
 
 from models.base import Base
