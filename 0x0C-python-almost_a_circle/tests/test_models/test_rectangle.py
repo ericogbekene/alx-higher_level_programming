@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+""" written tests for rectangle object """
 import unittest
 
 from models.base import Base

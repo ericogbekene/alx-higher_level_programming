@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+""" written tests for Square subclass """
 import unittest
 
 from models.base import Base
