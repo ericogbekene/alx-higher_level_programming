@@ -1,6 +1,5 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """ script to return a dict representation from an object """
-import json
 
 
 def class_to_json(obj):
