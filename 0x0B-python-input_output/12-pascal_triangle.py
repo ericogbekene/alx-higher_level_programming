@@ -5,4 +5,3 @@
 def pascal_triangle(n):
     """ returns a pascal triangle """
     pass
-
