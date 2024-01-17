@@ -1,4 +1,3 @@
--- show all tables in database
+-- script to show details of a table
 
-USE hbtn_0c_0;
-SELECT * FROM first_table;
+SHOW COLUMNS FROM first_table;
