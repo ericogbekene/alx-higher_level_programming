@@ -1,4 +1,4 @@
 -- Script to list databasee
 
-SHOW DATABASES
+SHOW DATABASES;
 
