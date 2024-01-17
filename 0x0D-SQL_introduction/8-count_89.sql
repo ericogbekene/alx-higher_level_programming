@@ -1,5 +1,5 @@
 -- count all with id=89
 
-SELECT *
+SELECT COUNT(*)
 FROM first_table
-WHERE id = '89';
+WHERE id = 89;
