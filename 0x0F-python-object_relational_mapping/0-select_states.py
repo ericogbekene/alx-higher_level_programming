@@ -7,12 +7,12 @@ if __name__ == '__main__':
     
     args = sys.argv
 
-    """if (len(args) != 3):
+    """if (len(args) != 4):
         print('Kindly enter at least 3 arguments')
         """
 
     try:
-        db = MySQLdb.connect(host='localhost', port=3306, user=args[0], passwd=args[1], db=args[2])
+        db = MySQLdb.connect(host='localhost', port=3306, user=args[1], passwd=args[2], db=args[3])
 
         cur = db.cursor()
         cur.execute("SELECT * FROM states ORDER BY states.id ASC")
