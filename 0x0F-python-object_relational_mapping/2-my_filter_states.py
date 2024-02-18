@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 a module to match a given argument
 with all records in a database
@@ -17,7 +17,7 @@ if __name__ == "__main__":
                              passwd=args[2], db=args[3])
 
         cur = db.cursor()
-        my_query = "SELECT * FROM states WHERE name \
+        my_query = "SELECT * FROM states WHERE name =\
              %s ORDER BY states.id ASC"
         cur.execute(my_query, (args[4],))
         rows = cur.fetchall()
