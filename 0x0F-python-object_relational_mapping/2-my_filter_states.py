@@ -17,9 +17,9 @@ if __name__ == "__main__":
                              passwd=args[2], db=args[3])
 
         cur = db.cursor()
-        my_query = "SELECT * FROM states WHERE name =\
-             %s ORDER BY states.id ASC"
-        cur.execute(my_query, (args[4],))
+        query = """SELECT * FROM states WHERE BINARY name = \
+            '{}' ORDER BY id ASC""".format(args[4])
+        cur.execute(query)
         rows = cur.fetchall()
         for row in rows:
             print(row)
